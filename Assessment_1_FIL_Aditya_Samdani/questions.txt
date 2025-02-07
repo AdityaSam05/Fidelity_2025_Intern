@@ -1,0 +1,32 @@
+1.create a dictionary with following fields:
+name:employee
+id,name,role,basic,hra,da
+insert five fields data
+find total salary
+create a  text file insert dictionary in text format
+2.text = "I know a set of email addresses that we can extract using expression1: abc.df@somecompany.co.uk, abc@gmail.com, xyz.ab@tpa.com, dfg.gh@dp.cp.net . But what about 11.234.abc.ghy@tp.edu, let's check."
+extract   email ids
+3.create a class to find text files from given folder
+4.class Bank(ABC):
+   def bank_info(self):
+       print("Welcome to bank")
+   @abstractmethod
+   def interest(self):
+       "Abstarct Method"
+       pass
+# implement abstract class  for two different bank
+5.create fidelity_inters virtual env in that create 
+django project and display today's date and time
+
+6.create thread which counts how many folder and files are there in particaular drive
+
+7.create class Employee class with following fields
+ name,id,dept
+ create Department class make inharitance from emplyee with following fields deptname,and departid
+write dsp function to display 
+name id,deptname
+8.create function which bubblesort and sequen_search write time decorator to find time for both
+9.i have one file which contain fidelity as text write class which calculate how many time fidelity is present
+10.create a class which converts dictionary elements into list like keys are one list and values are another
+11.create a function which read all successfull and pending transaction date and id 
+12.create function which read logfile with warning message

@@ -1,0 +1,5 @@
+ID:1,Name:Aditya Samdani,Role:Manager,Basic:10000000,HRA:45000,DA:10000,Total Salary:10055000
+ID:2,Name:Lakshay Agarwal,Role:Developer,Basic:400000,HRA:12000,DA:8000,Total Salary:420000
+ID:3,Name:Shivam Singh,Role:Designer,Basic:35000,HRA:15000,DA:7000,Total Salary:57000
+ID:4,Name:Ankur Ankurs,Role:Technical Consultant,Basic:50000,HRA:9000,DA:6000,Total Salary:65000
+ID:5,Name:Kartikay Sharma,Role:HR,Basic:450000,HRA:13500,DA:9000,Total Salary:472500
