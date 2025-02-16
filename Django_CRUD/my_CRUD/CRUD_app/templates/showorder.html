@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>OrderId</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+        {% for i in ord %}
+        <tr>
+            <td>{{i.ordId}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.addr}}</td>
+            <td>
+                <a href="{% url 'ui' i.ordId %}">
+                    <button type="button">Update</button>
+                </a>
+                <a href="{% url 'di' i.ordId %}">
+                    <button type="button">Delete</button>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    
+    <!-- Check if there are products -->
+    {% if object_list %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Stock ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Date of Purchase</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in object_list %}
+                    <tr>
+                        <td>{{ stock.st_Id }}</td>
+                        <td>{{ stock.stock_Name }}</td>
+                        <td>{{ stock.price }}</td>
+                        <td>{{ stock.qty }}</td>
+                        <td>{{ stock.date_of_purchase }}</td>
+                        <td>
+                            <td>
+                                <a href="{% url 'stock_detail' stock.pk %}">View Details</a> | 
+                                <a href="{% url 'update_stock' stock.pk %}">Edit</a> |
+                                <a href="{% url 'delete_stock' stock.pk %}">Delete</a>
+                            </td>
+                            
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No stocks available.</p>
+    {% endif %}
+    
+    <br>
+    <a href="{% url 'create' %}">Create New Stock</a>  <!-- Link to create a new product -->
+</body>
+</html>

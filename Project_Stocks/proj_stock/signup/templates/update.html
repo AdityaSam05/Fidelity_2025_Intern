@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2>Update Customer Information</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ up.as_p }}
+        <button type="submit">Update</button>
+    </form>
+
+    <p><a href="{% url 'info' %}">Back to Profile</a></p>
+{% endblock %}

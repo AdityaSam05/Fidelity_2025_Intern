@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2>Register as a Customer</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <div>
+            <label for="c_name">Customer Name:</label>
+            <input type="text" name="c_name" id="c_name" required>
+        </div>
+
+        <div>
+            <label for="email">Email (used as username):</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="c_id">Customer ID:</label>
+            <input type="text" name="c_id" id="c_id" required>
+        </div>
+
+        <div>
+            <label for="doj">Date of Joining:</label>
+            <input type="date" name="doj" id="doj" required>
+        </div>
+
+        <div>
+            <label for="password1">Password:</label>
+            <input type="password" name="password1" id="password1" required>
+        </div>
+
+        <div>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" name="password2" id="password2" required>
+        </div>
+
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+    <div>
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
+{% endblock %}

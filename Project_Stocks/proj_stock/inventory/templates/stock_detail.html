@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Details</title>
+</head>
+<body>
+    <h1>Stock Details</h1>
+    
+    <p><strong>Stock ID:</strong> {{ object.st_Id }}</p>
+    <p><strong>Name:</strong> {{ object.stock_Name }}</p>
+    <p><strong>Price:</strong> ${{ object.price }}</p>
+    <p><strong>Quantity:</strong> {{ object.qty }}</p>
+    <p><strong>Date of Purchase:</strong> {{ object.date_of_purchase }}</p>
+    <a href="{% url 'update_stock' object.pk %}">Edit Stock</a>  <!-- Link to edit the product -->
+    <br>
+    <a href="{% url 'show' %}">Back to Stock List</a>  <!-- Link back to the product list -->
+</body>
+</html>
