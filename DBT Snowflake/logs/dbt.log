@@ -1,0 +1,29 @@
+[0m14:30:02.402526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E26CC61BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E26CEBD280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E26CC61AF0>]}
+
+
+============================== 14:30:02.406535 | 421725bf-6f24-4240-82a0-78eccecc2a4f ==============================
+[0m14:30:02.406535 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:30:02.407527 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:30:23.224355 [debug] [MainThread]: Starter project path: C:\2nd year\DBT Snowflake\env_snowdbt\Lib\site-packages\dbt\include\starter_project
+[0m14:30:23.250354 [info ] [MainThread]: 
+Your new dbt project "prj_snowflake" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:30:23.251354 [info ] [MainThread]: Setting up your profile.
+[0m14:36:41.845867 [info ] [MainThread]: Profile prj_snowflake written to C:\Users\asus\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:36:41.846858 [debug] [MainThread]: Command `dbt init` succeeded at 14:36:41.846858 after 399.57 seconds
+[0m14:36:41.846858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E26CEBD280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E26D5F5D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E26D5F62D0>]}
+[0m14:36:41.847867 [debug] [MainThread]: Flushing usage events
+[0m14:36:42.891736 [debug] [MainThread]: An error was encountered while trying to flush usage events
